@@ -24,9 +24,9 @@ variable "master_instance_type" {
 
 variable "instance_type" {
   description = "The instance type."
-  default = "t2.micro"
+  #default = "t2.micro"
   #default = "m5.4xlarge"
-  #default = "m5.large"
+  default = "m5.large"
 }
 
 
