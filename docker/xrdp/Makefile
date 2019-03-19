@@ -6,3 +6,8 @@ run:
            -v /home:/home \
            -dit --restart unless-stopped \
            rattydave/docker-ubuntu-xrdp-mate-custom:19.04
+
+
+stop:
+	sudo docker kill RattyDAVE19.04
+	sudo docker rm RattyDAVE19.04
