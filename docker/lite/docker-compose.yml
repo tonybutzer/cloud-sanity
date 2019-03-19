@@ -1,0 +1,12 @@
+
+myjup:
+    image: tbutzer:lite
+    ports:
+      - "80:8888"
+    volumes:
+      - /home/ubuntu:/data
+      - ./notebooks:/notebooks
+    restart: always
+    shm_size: 1g
+    working_dir: /notebooks
+    command: jupyter notebook --allow-root --ip="0.0.0.0" --NotebookApp.token='secretpassword'
