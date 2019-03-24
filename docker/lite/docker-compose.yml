@@ -2,7 +2,8 @@
 myjup:
     image: tbutzer:lite
     ports:
-      - "80:8888"
+      - "8888:8888"
+        # - "80:8888"
     volumes:
       - /home/ubuntu:/data
       - ./notebooks:/notebooks

@@ -8,7 +8,7 @@ run:
            -v /home/ubuntu/opt/cloud-sanity/docker/xrdp/createusers.txt:/root/createusers.txt \
            -v /home:/home \
            -dit --restart unless-stopped \
-	   tbutzer:xrdp_plus
+	   tbutzer:xrdp_plus1
 
 
 stop:
