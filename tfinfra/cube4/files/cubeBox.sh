@@ -4,8 +4,8 @@
 
 echo "Hello Tony from cubeBox.sh userdata terraform" > /tmp/hellotony.txt
 
-sudo hostname cube5
-sudo echo '127.0.0.1 cubeBox' >> /etc/hosts
+sudo hostname cube4
+sudo echo '127.0.0.1 cube4' >> /etc/hosts
 sudo mkdir -p /opt
 sudo chown -R ubuntu /opt
 

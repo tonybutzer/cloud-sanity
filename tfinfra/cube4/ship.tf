@@ -5,7 +5,7 @@ provider "aws" {
   region = "${var.region}"
 }
 
-resource "aws_instance" "cube6" {
+resource "aws_instance" "cube4" {
   ami           = "${var.ami}"
   instance_type = "${var.master_instance_type}"
   key_name                    = "${var.key_name}"
@@ -17,5 +17,11 @@ resource "aws_instance" "cube6" {
   iam_instance_profile                    ="${var.iam_role}"
   security_groups = ["${var.security_group}"]
   user_data                   = "${file("files/cubeBox.sh")}"
+
+  root_block_device {
+     volume_size = "30"
+     volume_type = "standard"
+  }
+
 }
 
