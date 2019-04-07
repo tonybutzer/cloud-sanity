@@ -1,5 +1,5 @@
 build:
-	sudo docker build --tag tbutzer:xrdp_plus .
+	sudo docker build --tag tbutzer:xrdp_typora .
 
 run:
 	sudo docker run --name xplus \
