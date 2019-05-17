@@ -8,6 +8,8 @@ RUN apt-get update &&\
 	&& apt-get update \
 	&& apt-get install -y typora
 
+COPY createusers.txt /root/
+
 
 #locales
 ENV LANG en_US.UTF-8  
