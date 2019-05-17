@@ -6,7 +6,11 @@ RUN apt-get update &&\
 	&& apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE\
 	&& add-apt-repository 'deb http://typora.io linux/'\
 	&& apt-get update \
-	&& apt-get install -y typora
+	&& apt-get install -y typora \
+	&& apt-get install -y firefox \
+	&& apt-get install -y nmap \
+	&& apt-get install -y iputils-ping \
+	&& apt-get install -y dnsutils
 
 COPY createusers.txt /root/
 
