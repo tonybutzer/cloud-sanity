@@ -1,0 +1,3 @@
+export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+
+export COGPRE=dev-cmahan-test/collection1/level2/albers/oli-tirs/
