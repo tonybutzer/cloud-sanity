@@ -23,6 +23,8 @@
 # Ref
 https://earthobservatory.nasa.gov/blogs/elegantfigures/2013/10/22/how-to-make-a-true-color-landsat-8-image/
 
+https://edwardmjohnson.wordpress.com/using-landsat-imagery-in-gimp/
+
 
 # Viewers
 
