@@ -16,6 +16,7 @@ RUN apt install -y ristretto \
 && apt install -y geeqie\
 && apt install -y eom\
 && apt install -y eog\
+&& apt install -y gimp\
 && apt install -y nomacs
 
 

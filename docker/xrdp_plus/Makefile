@@ -30,3 +30,6 @@ stop:
 	sudo docker kill xplus
 	sudo docker rm xplus
 
+
+git:
+	(cd /opt/cloud-sanity && make)
