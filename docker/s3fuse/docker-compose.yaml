@@ -1,0 +1,16 @@
+volumes:
+  s3data:
+    driver: local
+
+services:
+  s3vol:
+    image: elementar/s3-volume
+    command: /data s3://rhassan-dev-test
+    volumes:
+      - s3data:/data
+
+linux:
+  image: tbutzer/bash-tester
+  volumes:
+    - s3data:/var/test
+

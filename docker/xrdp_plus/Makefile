@@ -8,7 +8,7 @@ run:
            --privileged=true \
            -p 8389:3389 \
            -v `pwd`/createusers.txt:/root/createusers.txt \
-           -v /home:/home \
+           -v `pwd`:/home \
            -dit --restart unless-stopped \
 	   ${Image}
 
