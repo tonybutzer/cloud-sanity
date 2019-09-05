@@ -23,3 +23,7 @@ stop:
 	sudo docker kill some-sphinx
 	sudo docker rm some-sphinx
 
+
+gnufix:
+	sudo apt install gnupg2 pass
+
