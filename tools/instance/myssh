@@ -1,0 +1,5 @@
+#! /bin/bash
+
+remoteip=`ssh bastion instance getip --tag $1`
+
+ssh -X -i "~/.ssh/bucketlauncher2-keypair.pem" ubuntu@${remoteip}
