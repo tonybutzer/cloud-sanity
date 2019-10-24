@@ -12,4 +12,6 @@ RUN pip3 install recommonmark \
 # RUN groupadd -r -g 1000 ubuntu && useradd -r -u 1000 -g ubuntu ubuntu
 # USER ubuntu
 RUN groupadd -r -g 7428 rhassan && useradd -r -u 7428 -g rhassan rhassan
-USER rhassan
+RUN groupadd -r -g 1000 ubuntu && useradd -r -u 1000 -g ubuntu ubuntu
+#USER rhassan
+USER ubuntu
