@@ -1,8 +1,8 @@
 run:
 	sudo docker run --name RattyDAVE19.04 \
            --privileged=true \
-           -p 3389:3389 \
-           -v /home/ubuntu/opt/cloud-sanity/docker/xrdp/createusers.txt:/root/createusers.txt \
+           -p 8389:3389 \
+           -v `pwd`/createusers.txt:/root/createusers.txt \
            -v /home:/home \
            -dit --restart unless-stopped \
            rattydave/docker-ubuntu-xrdp-mate-custom:19.04
