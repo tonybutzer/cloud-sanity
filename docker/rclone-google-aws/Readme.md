@@ -1,3 +1,5 @@
-# Purpose
+# rclone container
 
-- initially allow access from dev-et-data/greg to tonybutzer@gmail:darin
+## See Dockerfile
+
+## See Makefile
